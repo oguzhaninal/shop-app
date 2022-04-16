@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:piton_shop_list/core/locator.dart';
 import 'core/core_shelf.dart' as core;
 
 void main() async {
+  setupLocator();
   WidgetsFlutterBinding.ensureInitialized();
   await core.LocalManager.prefrencesInit();
   final languageProvider = core.LanguageProvider();
@@ -33,7 +35,7 @@ class _MyAppState extends State<MyApp> {
       data: const MediaQueryData(),
       child: core.Consumer2<core.LanguageProvider, core.ThemeProvider>(
         builder: (context, langModel, themeModel, child) => MaterialApp(
-          title: 'Jetrik Management',
+          title: 'Piton Shop List',
           debugShowCheckedModeBanner: false,
           theme: widget.themeProvider.theme,
           localizationsDelegates: [...core.AppLocalizations.localDelegates],

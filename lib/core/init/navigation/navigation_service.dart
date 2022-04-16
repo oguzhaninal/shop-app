@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'I_navigation_service.dart';
 
 class NavigationService implements INavigationService {
@@ -10,6 +11,10 @@ class NavigationService implements INavigationService {
   GlobalKey<NavigatorState> navigatorKey = GlobalKey();
   // ignore: prefer_function_declarations_over_variables
   final removeAllOldRoutes = (route) => false;
+
+  Future<dynamic> navigateTo(Widget route) {
+    return navigatorKey.currentState!.push(MaterialPageRoute(builder: (_) => route));
+  }
 
   @override
   Future<void> navigateToPage({String path = '/', Object data = const {}}) async {

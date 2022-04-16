@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:piton_shop_list/views/auth/auth_view.dart';
+import 'package:piton_shop_list/views/auth/login/login_view.dart';
+import 'package:piton_shop_list/views/settings/settings_view.dart';
 
 import '../../../views/main_screen.dart';
 import '../../constants/navigation/navigation_constants.dart';
@@ -11,10 +14,13 @@ class NavigationRoute {
 
   Route<dynamic> generateRoute(RouteSettings args) {
     switch (args.name) {
+      case NavigationConstants.settings:
+        return normalNavigate(Settings());
       case NavigationConstants.login:
-        return normalNavigate(MainScreen());
+        return normalNavigate(AuthView());
+
       default:
-        return normalNavigate(MainScreen());
+        return normalNavigate(AuthView());
     }
   }
 

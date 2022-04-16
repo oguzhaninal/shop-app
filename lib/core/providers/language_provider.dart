@@ -9,7 +9,7 @@ class LanguageProvider extends ChangeNotifier {
 
   Future<void> fetchLocale() async {
     var langCode = await LocalManager.instance.getStringValue(LocalManagerKeys.languageCode);
-    _appLocale = Locale(langCode == 'Not Found' ? 'en' : langCode);
+    _appLocale = Locale(langCode == 'Not Found' ? 'tr' : langCode);
     notifyListeners();
   }
 
