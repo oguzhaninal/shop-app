@@ -12,7 +12,7 @@
     "name_error": "İsim boş olamaz",
     "pass_validate": "Şifrenizi Doğrulayınız",
     "pass_same_error": "Şifreler aynı olmalıdır",
-    "pass_validate_error": "Şifreniz alfanumerik olmalı ve 6 ile 8 karakter arasında olmalıdır",
+    "pass_validate_error": "Şifreniz alfanumerik olmalı ve 6 ile 20 karakter arasında olmalıdır",
     "password": "Şifreniz",
     "phone": "Telefon Numaranız",
     "phone_error": "Telefon numaranızı kontrol ediniz",

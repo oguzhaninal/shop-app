@@ -12,7 +12,7 @@
     "name_error": "Name can't be empty",
     "pass_validate": "Confirm your password",
     "pass_same_error": "Passwords must match",
-    "pass_validate_error": "Password must be alphanumeric and between 6 and 8 characters",
+    "pass_validate_error": "Password must be alphanumeric and between 6 and 20 characters",
     "password": "Password",
     "phone": "Phone Number",
     "phone_error": "Check your phone",
