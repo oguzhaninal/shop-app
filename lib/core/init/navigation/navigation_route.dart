@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:piton_shop_list/views/auth/auth_view.dart';
-import 'package:piton_shop_list/views/auth/login/login_view.dart';
+import 'package:piton_shop_list/views/auth/splash_screen.dart';
 import 'package:piton_shop_list/views/settings/settings_view.dart';
-
-import '../../../views/main_screen.dart';
 import '../../constants/navigation/navigation_constants.dart';
 
 class NavigationRoute {
@@ -20,7 +18,7 @@ class NavigationRoute {
         return normalNavigate(AuthView());
 
       default:
-        return normalNavigate(AuthView());
+        return normalNavigate(SplashScreen());
     }
   }
 

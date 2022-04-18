@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'I_navigation_service.dart';
 
@@ -22,7 +21,7 @@ class NavigationService implements INavigationService {
   }
 
   @override
-  Future<void> navigateToPageClear({String path = '/', Object data = const {}}) async {
-    await navigatorKey.currentState?.pushNamedAndRemoveUntil(path, removeAllOldRoutes, arguments: data);
+  Future<void> navigateToPageClear(Widget route) async {
+    await navigatorKey.currentState?.pushAndRemoveUntil(MaterialPageRoute(builder: (_) => route), (route) => false);
   }
 }

@@ -1,16 +1,29 @@
 {
+    "buy": "Buy",
     "change_language": "Change Language",
     "change_theme": "Change Theme",
     "login": "Login",
+    "login_success": "Login successful, redirecting",
     "logout": "Logout",
     "mail": "E Mail",
-    "name": "Name",
+    "mail_error": "Email must be correct format",
+    "mail_pass_empty": "Mail or password cant be empty",
+    "name": "Name and Surname",
+    "name_error": "Name can't be empty",
     "pass_validate": "Confirm your password",
+    "pass_same_error": "Passwords must match",
+    "pass_validate_error": "Password must be alphanumeric and between 6 and 8 characters",
     "password": "Password",
     "phone": "Phone Number",
+    "phone_error": "Check your phone",
+    "product_listed": "products are listed",
+    "redirecting": "Redirecting..",
     "register": "Register",
+    "register_success": "Registration successful, redirecting..",
     "remember_me": "Remember Me",
+    "search_product": "Search Product",
     "settings": "Settings",
-    "surname": "Surname"
+    "surname": "Surname",
+    "total": "Total of"
 
 }

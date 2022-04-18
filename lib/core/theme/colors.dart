@@ -61,4 +61,3 @@ Color textPrimary(BuildContext context) => themeProvider(context).isDark() ? tex
 Color textSecondary(BuildContext context) => themeProvider(context).isDark() ? textSecondaryDark : textSecondaryLight;
 
 Color border(BuildContext context) => themeProvider(context).isDark() ? borderDark : borderLight;
-String toastColor(BuildContext context) => themeProvider(context).isDark() ? '#FF4b23' : '#13074a';

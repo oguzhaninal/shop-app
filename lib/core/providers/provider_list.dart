@@ -1,5 +1,4 @@
 import 'package:piton_shop_list/core/core_shelf.dart';
-import 'package:piton_shop_list/core/providers/auth_provider.dart';
 import 'package:provider/single_child_widget.dart';
 
 class ApplicationProvider {
@@ -20,6 +19,9 @@ class ApplicationProvider {
     ),
     ChangeNotifierProvider(
       create: (context) => AuthProvider(),
+    ),
+    ChangeNotifierProvider(
+      create: (context) => ProductProvider(),
     ),
     Provider.value(value: NavigationService.instance)
   ];

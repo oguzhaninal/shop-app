@@ -22,6 +22,8 @@ class _AuthViewState extends State<AuthView> {
     final themNotifier = Provider.of<ThemeProvider>(context, listen: false);
     final authProvider = Provider.of<AuthProvider>(context, listen: true);
     final size = MediaQuery.of(context).size;
+    AppLocalizations.of(context);
+
     return Consumer(builder: (context, LanguageProvider lang, child) {
       return SafeArea(
         child: Scaffold(
@@ -51,7 +53,7 @@ class _AuthViewState extends State<AuthView> {
                   duration: Duration(milliseconds: 300),
                   // curve: Curves.bounceOut,
                   padding: EdgeInsets.all(20),
-                  height: authProvider.currentPage == 'register' ? size.height * .62 : size.height * .41,
+                  height: authProvider.currentPage == 'register' ? size.height * .59 : size.height * .44,
                   width: size.width - 40,
                   margin: EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
@@ -96,36 +98,6 @@ class _AuthViewState extends State<AuthView> {
                             : RegisterScreen(
                                 auth: authProvider,
                               ),
-                        Align(
-                          alignment: Alignment.bottomRight,
-                          child: MaterialButton(
-                            padding: EdgeInsets.zero,
-                            onPressed: () {},
-                            child: Container(
-                              margin: EdgeInsets.all(6),
-                              width: size.width * .28,
-                              height: 60,
-                              decoration:
-                                  BoxDecoration(color: mainColor(context), borderRadius: BorderRadius.circular(16)),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Text(
-                                    authProvider.currentPage.translate,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                    ),
-                                  ),
-                                  Icon(
-                                    Icons.arrow_right,
-                                    color: Colors.white,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
                       ],
                     ),
                   ),

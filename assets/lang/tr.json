@@ -1,16 +1,28 @@
 {
-
+    "buy": "Satın al",
     "change_language": "Dili Değiştir",
     "change_theme": "Temayı Değiştir",
     "logout": "Çıkış Yap",
     "login": "Giriş Yap",
+    "login_success": "Giriş başarılı, yönlendiriliyorsunuz",
     "mail": "E Postanız",
-    "name": "Adınız",
+    "mail_error": "E Posta doğru formatta olmalıdır",
+    "mail_pass_empty": "E Posta ya da şifre boş bırakılamaz",
+    "name": "Adınız ve Soyadınız",
+    "name_error": "İsim boş olamaz",
     "pass_validate": "Şifrenizi Doğrulayınız",
+    "pass_same_error": "Şifreler aynı olmalıdır",
+    "pass_validate_error": "Şifreniz alfanumerik olmalı ve 6 ile 8 karakter arasında olmalıdır",
     "password": "Şifreniz",
     "phone": "Telefon Numaranız",
+    "phone_error": "Telefon numaranızı kontrol ediniz",
+    "product_listed": "ürün listeleniyor",
+    "redirecting": "Yönlendiriliyor...",
     "register": "Kayıt Ol",
+    "register_success": "Kayıt Başarılı, yönlendiriliyorsunuz..",
     "remember_me": "Beni Hatırla",
+    "search_product": "Ürün arayın",
     "settings": "Ayarlar",
-    "surname": "Soy adınız"
+    "surname": "Soy adınız",
+    "total": "Toplam"
 }

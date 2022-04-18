@@ -33,7 +33,7 @@ class LocalManager {
 
   String getStringValue(LocalManagerKeys key) => _preferences?.getString(key.toString()) ?? 'Not Found';
 
-  String getLanguageCode() => _preferences?.getString(LocalManagerKeys.languageCode.toString()) ?? 'en';
+  String getLanguageCode() => _preferences?.getString(LocalManagerKeys.languageCode.toString()) ?? 'tr';
 
   Future<bool> getBoolValue(LocalManagerKeys key) async => _preferences?.getBool(key.toString()) ?? false;
 

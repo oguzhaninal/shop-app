@@ -21,6 +21,7 @@ class _SettingsState extends State<Settings> {
     var size = MediaQuery.of(context).size;
     final themeNotifier = Provider.of<ThemeProvider>(context, listen: false);
     final langProvider = Provider.of<LanguageProvider>(context, listen: false);
+    AppLocalizations.of(context);
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:piton_shop_list/views/auth/auth_view.dart';
 
 import '../../../core/core_shelf.dart';
 
@@ -21,8 +22,8 @@ class UserSettingsLogoutButton extends StatelessWidget {
         color: Color(0xffff0035).withOpacity(0.2),
         child: InkWell(
           onTap: () async {
-            // await LocalManager.instance.setBoolValue(LocalManagerKeys.isUserLoggedWithoutRememberMe, false);
-            // await authService.logout(context);
+            localManager.clearAll();
+            navigatonService.navigateToPageClear(AuthView());
           },
           borderRadius: BorderRadius.circular(3),
           child: Container(
